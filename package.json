@@ -1,6 +1,6 @@
 {
   "name": "selection-sort-array-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The module sort an Array of natural numbers.",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/Roman84asas/selection-sort-array-number.git"
   },
-  "author": "Roman Mereneanu",
+  "author": {
+    "name": "Roman Mereneanu",
+    "email": "romanmereneanu@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Roman84asas/selection-sort-array-number/issues"
   },
-  "homepage": "https://github.com/Roman84asas/selection-sort-array-number#readme"
+  "homepage": "https://github.com/Roman84asas/selection-sort-array-number#readme",
+  "keywords": [
+    "sort",
+    "array sort",
+    "sort an array of number",
+    "sort array number"
+  ]
 }
