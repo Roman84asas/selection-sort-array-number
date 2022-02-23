@@ -1,17 +1,18 @@
 module.exports = function (array) {
-    var tempArr = array;
-    var countArr = tempArr.length;
-    var tempVal = 0;
-    for (var i = 0; i < countArr; i++) {
-        var minVal = i;
-        for (var j = minVal+1; j < countArr; j++) {
-            if(tempArr[j] < tempArr[minVal]) {
-                minVal = j;
+    // var tempArr = array; // you don't need this
+    
+    // Also, it is good to use let instead of var
+    let tempVal = 0;
+    for (let i = 0, len = array.length; i < len; i++) {
+        let minValIndex = i;
+        for (let j = minValIndex+1; j < len; j++) {
+            if(array[j] < array[minValIndex]) {
+                minValIndex = j;
             }
         }
-        tempVal = tempArr[i];
-        tempArr[i] = tempArr[minVal];
-        tempArr[minVal] = tempVal;
+        tempVal = array[i];
+        array[i] = array[minValIndex];
+        array[minValIndex] = tempVal;
     }
-    return tempArr;
+    return array;
 };
